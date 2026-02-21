@@ -2,8 +2,8 @@
   --bg: #050608;
   --white: #f5f5f5;
   --muted: #9b9b9b;
-  --line: #d9d9d9;
-  --red: #ff1010;
+  --line: rgba(255, 255, 255, 0.72);
+  --red: #f00606;
 }
 
 * {
@@ -26,20 +26,20 @@ body.hivideo-body {
 }
 
 .hivideo-header-inner {
-  min-height: 72px;
+  min-height: 66px;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 42px;
+  padding: 0 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
 .hivideo-logo {
   color: var(--red);
   text-decoration: none;
-  font-size: 47px;
+  font-size: 30px;
   line-height: 1;
   font-weight: 900;
   font-style: italic;
@@ -48,7 +48,7 @@ body.hivideo-body {
 
 .hivideo-nav {
   display: flex;
-  gap: 34px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -66,12 +66,12 @@ body.hivideo-body {
 
 .hivideo-nav a.is-active::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--red);
   position: absolute;
-  left: -18px;
+  left: -14px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -84,6 +84,13 @@ body.hivideo-body {
   padding: 10px 28px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.hivideo-hero,
+.catalog-section,
+.solutions-section {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .hivideo-hero {
@@ -110,7 +117,7 @@ body.hivideo-body {
 }
 
 .hero-content p {
-  margin: 58px 0 0;
+  margin: 42px 0 0;
   text-transform: uppercase;
   color: #d1d1d1;
   font-size: 20px;
@@ -119,8 +126,8 @@ body.hivideo-body {
 }
 
 .hero-round-btn {
-  width: 206px;
-  height: 206px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   border: 2px solid rgba(240, 240, 240, 0.75);
   display: inline-flex;
@@ -136,7 +143,7 @@ body.hivideo-body {
   position: absolute;
   left: 84px;
   top: 96px;
-  font-size: 67px;
+  font-size: 58px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -144,8 +151,8 @@ body.hivideo-body {
 }
 
 .hero-rec .dot {
-  width: 47px;
-  height: 47px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--red);
   display: block;
@@ -155,7 +162,7 @@ body.hivideo-body {
   position: absolute;
   right: 84px;
   bottom: 92px;
-  font-size: 67px;
+  font-size: 60px;
   font-weight: 500;
 }
 
@@ -255,73 +262,139 @@ body.hivideo-body {
   bottom: 46px;
 }
 
-@media (max-width: 1100px) {
-  .hivideo-logo {
-    font-size: 32px;
-  }
+.catalog-section {
+  padding: 28px 42px 62px;
+}
 
-  .hivideo-nav,
-  .hivideo-consult-btn {
-    font-size: 15px;
-  }
+.hivideo-nav,
+.hivideo-consult-btn {
+  font-size: 15px;
+}
 
-  .hivideo-nav {
-    gap: 20px;
-  }
+.hivideo-nav {
+  gap: 14px;
+}
 
-  .hero-content {
-    margin-top: 120px;
-  }
+.hivideo-nav a {
+  font-size: 12px;
+}
 
-  .hero-content h1 {
-    font-size: 48px;
-  }
+.hivideo-consult-btn {
+  font-size: 11px;
+  padding: 7px 16px;
+}
 
-  .hero-content p {
-    font-size: 28px;
-  }
+.hivideo-hero {
+  min-height: 780px;
+  padding: 44px 24px 30px;
+}
 
-  .hero-rec,
-  .hero-1080 {
-    font-size: 46px;
-  }
+.hero-content {
+  margin-top: 120px;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin-top: 32px;
+}
+
+.hero-round-btn {
+  width: 148px;
+  height: 148px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.hero-rec,
+.hero-1080 {
+  font-size: 40px;
+}
+
+.catalog-section,
+.solutions-section {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.catalog-kicker,
+.solutions-kicker {
+  font-size: 18px;
+}
+
+.catalog-section h2,
+.solutions-section h2 {
+  font-size: 52px;
+  margin-bottom: 18px;
+}
+
+.catalog-active-row {
+  font-size: 28px;
+}
+
+.catalog-list a {
+  min-height: 88px;
+  font-size: 24px;
+}
+
+.solutions-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.solution-card {
+  min-height: 420px;
 }
 
 @media (max-width: 860px) {
   .hivideo-header-inner {
     min-height: auto;
-    padding: 16px;
+    padding: 14px 14px 12px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .hivideo-logo {
+    font-size: 26px;
   }
 
   .hivideo-nav {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .hivideo-consult-btn {
+    font-size: 10px;
+    padding: 7px 14px;
   }
 
   .hivideo-hero {
-    padding: 40px 16px 30px;
+    padding: 24px 14px 18px;
+    min-height: auto;
   }
 
   .hero-content {
-    margin-top: 100px;
+    margin-top: 26px;
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 33px;
   }
 
   .hero-content p {
-    font-size: 20px;
-    margin-top: 34px;
+    font-size: 17px;
+    margin-top: 24px;
   }
 
   .hero-round-btn {
-    width: 150px;
-    height: 150px;
-    font-size: 20px;
+    width: 124px;
+    height: 124px;
+    font-size: 16px;
+    margin-top: 24px;
   }
 
   .hero-rec,
@@ -333,21 +406,115 @@ body.hivideo-body {
 
   .hero-rec {
     justify-content: center;
-    margin-bottom: 20px;
-    font-size: 34px;
+    margin-bottom: 12px;
+    font-size: 29px;
+  }
+
+  .hero-rec .dot {
+    width: 24px;
+    height: 24px;
   }
 
   .hero-1080 {
-    font-size: 34px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 16px;
     text-align: center;
   }
 
   .hero-battery {
-    margin-top: 18px;
+    margin-top: 12px;
   }
 
   .hero-corner {
     display: none;
+  }
+
+  .catalog-section {
+    padding: 14px 14px 34px;
+  }
+
+  .catalog-kicker,
+  .solutions-kicker {
+    font-size: 14px;
+  }
+
+  .catalog-kicker .dot,
+  .solutions-kicker .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .catalog-section h2,
+  .solutions-section h2 {
+    font-size: 34px;
+    margin: 8px 0 14px;
+  }
+
+  .catalog-active-row {
+    font-size: 18px;
+    gap: 10px;
+    padding: 10px 8px;
+  }
+
+  .arrow-circle {
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+  }
+
+  .catalog-list {
+    margin-top: 10px;
+  }
+
+  .catalog-list li {
+    margin-bottom: 10px;
+  }
+
+  .catalog-list a {
+    min-height: 66px;
+    font-size: 17px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .catalog-list a::before,
+  .catalog-list a::after,
+  .catalog-list li::before,
+  .catalog-list li::after {
+    width: 14px;
+    height: 14px;
+  }
+
+  .catalog-list li::before,
+  .catalog-list li::after {
+    bottom: 10px;
+  }
+
+  .solutions-section {
+    padding: 8px 14px 36px;
+  }
+
+  .solutions-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .solution-card {
+    min-width: 230px;
+    min-height: 360px;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+
+
+  .solution-content h3 {
+    font-size: 15px;
+  }
+
+  .solution-content p {
+    font-size: 11px;
   }
 }
