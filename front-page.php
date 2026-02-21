@@ -37,6 +37,65 @@
             </ul>
         </div>
     </section>
+
+    <section id="solutions" class="solutions-section">
+        <div class="solutions-wrap">
+            <p class="solutions-kicker"><span class="dot"></span>решения</p>
+            <h2>Решения</h2>
+
+            <div class="solutions-grid">
+                <article class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1616594039964-3f740fc52e8f?q=80&w=900&auto=format&fit=crop" alt="Квартира">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-corners" aria-hidden="true"></div>
+                    <div class="solution-content">
+                        <h3><span class="dot"></span>Квартира</h3>
+                        <p>Уведомления на телефон, онлайн-просмотр, контроль детей и животных.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=900&auto=format&fit=crop" alt="Склад и парковка">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-corners" aria-hidden="true"></div>
+                    <div class="solution-content">
+                        <h3><span class="dot"></span>Склад / парковка</h3>
+                        <p>Большая территория, мощный зум, авто-отслеживание, ночной цвет.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=900&auto=format&fit=crop" alt="Частный дом">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-corners" aria-hidden="true"></div>
+                    <div class="solution-content">
+                        <h3><span class="dot"></span>Частный дом</h3>
+                        <p>Ворота, двор, авто, участок. Видно лица и номера даже ночью.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop" alt="Магазины и кафе">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-corners" aria-hidden="true"></div>
+                    <div class="solution-content">
+                        <h3><span class="dot"></span>Магазины / кафе</h3>
+                        <p>Касса, зал, склад, дисциплина сотрудников.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900&auto=format&fit=crop" alt="Предприятие">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-corners" aria-hidden="true"></div>
+                    <div class="solution-content">
+                        <h3><span class="dot"></span>Предприятие</h3>
+                        <p>Офис, КПП, цеха, удалённые филиалы.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
